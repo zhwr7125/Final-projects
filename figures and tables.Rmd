@@ -1,0 +1,32 @@
+---
+title: "Projects: figures and tables"
+author: "Wenru Zhou"
+date: "11/23/2020"
+output: word_document
+header-includes:
+  - \newcommand{\blandscape}{\begin{landscape}}
+  - \newcommand{\elandscape}{\end{landscape}}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(fig.width=12, fig.height=8)
+library(knitr)
+source("D:/Course/BIOS7695/Final projects/programs/7. Dispersion summary.R")
+```
+
+#Results:
+**Table 0: Demographics**
+```{r eval=TRUE, echo=TRUE}
+kable(tab.dem0, align = c("l", "l"))
+```
+
+**Table i: Demographics**
+```{r eval=TRUE, echo=TRUE}
+kable(missing.dem, align = c("l", "l"))
+```
+
+**Table 1: Demographics**
+```{r eval=TRUE, echo=TRUE}
+kable(tab.dem, align = c("l", "l"))
+```
